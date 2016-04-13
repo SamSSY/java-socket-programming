@@ -8,7 +8,7 @@ public class P2aClient {
    
    public void connectToServer() throws IOException {
       String serverAddress = "127.0.0.1";
-      // serverAddress = "140.112.18.178";
+      serverAddress = "140.112.18.178";
       Socket socket = new Socket(serverAddress, 9090);
       this.socket = socket;
       inFromServer = new BufferedReader(
